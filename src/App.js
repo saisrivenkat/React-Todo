@@ -31,24 +31,6 @@ function App() {
   }
   return (
     <div className="App">
-      {/*
-      <form onSubmit={submit}>
-        <input onChange={handlechange} />
-        <select value={dropown} onChange={dropdownchange}>
-          <option value="completed">Completed</option>
-          <option value="notcompleted">Not completed</option>
-        </select>
-      </form>
-      {todo.filter((ul) => {
-        if (!ul.completed && dropown === 'notcompleted') {
-          return ul
-        }
-        else if (ul.completed && dropown === 'completed') {
-          return ul
-        }
-
-      }).map((ul, index) => <div key={ul.id}><li onClick={() => change(ul.id)} key={ul.id} >{ul.title}</li><button onClick={() => deletetodo(index)} >Delete</button></div>)}
-      * */}
       <Home
         setsearch={setsearch}
         dropdownchange={dropdownchange}
@@ -59,9 +41,6 @@ function App() {
         submit={submit}
         deletetodo={deletetodo}
         change={change}
-
-
-
       />
     </div>
   );
